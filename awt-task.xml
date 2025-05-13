@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="task_configure_automated_workflow_trigger">
+    <title>Configuring the Automated Workflow Trigger</title>
+    <shortdesc>Configure the Automated Workflow Trigger to automatically launch a workflow when critical events, such as an internet blackout or database data loss are detected in SecureNova </shortdesc>
+    <taskbody>
+        <context>
+            <p>The Automated Workflow Trigger enables administrators to automate responses to critical events by defining conditions that initiate workflows, such as notifying a team or escalating an issue. Use the SecureNova Workflow Studio to set up the trigger.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Navigate to <uicontrol>Workflow Studio</uicontrol> in the SecureNova platform and select <uicontrol>Create New Trigger</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>In the <uicontrol>Trigger Conditions</uicontrol> selection, select <uicontrol>Event Type</uicontrol> and choose <uicontrol>Critical Event</uicontrol> (e.g., Internet Blackout or Database Data Loss).</cmd>
+                <info><note type="tip">Verify the event type matches your organization's monitoring system.</note></info>
+            </step>
+            <step>
+                <cmd>Define the <uicontrol>Workflow</uicontrol> to activate, such as <uicontrol>Notify IT Team</uicontrol> or <uicontrol>Initiate Recovery Process</uicontrol>, and link it to the trigger.</cmd>
+            </step>
+            <step>
+                <cmd>Test the trigger by simulating a critical event in the <uicontrol>Test Environment</uicontrol> to ensure the workflow launches correctly.</cmd>
+            </step>
+            <step>
+                <cmd>Save and activate the trigger by clicking <uicontrol>Publish</uicontrol> in Workflow Studio.</cmd>
+            </step>
+        </steps>
+        <result>
+            <p>Once activated, the Automated Workflow Trigger will automatically initiate the specified workflow whenever the defined critical event occurs, ensuring rapid response.</p>
+        </result>
+        <postreq>
+            <p>If you have questions or encounter issues, contact SecureNova support via email <uicontrol>admincontrol@securenova.com</uicontrol>, through the <uicontrol>Admin Portal</uicontrol> or consult the <uicontrol>Workflow Trigger Documentation</uicontrol>. If the trigger doesn't activate, verify the event type settings in <uicontrol>Trigger Conditions</uicontrol> or check the <uicontrol>System Logs</uicontrol> for errors.</p>
+        </postreq>
+    </taskbody>
+</task>
