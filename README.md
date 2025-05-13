@@ -36,7 +36,7 @@ The following three documents collectively provide conceptual understanding, con
 
 ---
 
-## Use Case Example
+## Case Example
 
 > *An IT administrator wants to automatically notify the technical team when a "Database Data Loss" event occurs. By configuring an Automated Workflow Trigger, the system will immediately launch the appropriate response workflow without manual intervention.*
 
