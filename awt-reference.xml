@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reference id="ref_automated_workflow_trigger_config">
+<title>Automated Workflow Trigger Configuration Reference</title>
+<shortdesc>This reference details the configuration parameters for the Automated Workflow Trigger, enabling administrators to define conditions and actions for automated workflows in SecureNova.</shortdesc>
+<refbody>
+    <section>
+        <title>Configuration Parameters</title>
+        <p>The Automated Workflow Trigger supports a range of settings to customize how workflows respond to critical events, such as internet blackouts or database data loss. Use these parameters in Workflow Studio to set up triggers.</p>
+        <table>
+            <tgroup cols="3">
+                <colspec colname="c1" colwidth="1*"/>
+                <colspec colname="c2" colwidth="1*"/>
+                <colspec colname="c3" colwidth="2*"/>
+                <thead>
+                    <row>
+                        <entry>Parameter</entry>
+                        <entry>Type</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Event Type</entry>
+                        <entry>Selection</entry>
+                        <entry>Specifies the critical event that activates the trigger, such as <uicontrol>Internet Blackout</uicontrol>, <uicontrol>Database Data Loss</uicontrol>, or <uicontrol>Server Failure</uicontrol>.</entry>
+                    </row>
+                    <row>
+                        <entry>Workflow Action</entry>
+                        <entry>Selection</entry>
+                        <entry>Sets the urgency of the trigger, with options including <uicontrol>High</uicontrol>, <uicontrol>Medium</uicontrol>, or <uicontrol>Low</uicontrol>. High priority ensures immediate action.</entry>
+                    </row>
+                    <row>
+                        <entry>Notification Channel</entry>
+                        <entry>Text</entry>
+                        <entry>Configures the delivery method for alerts, such as <uicontrol>Email</uicontrol>, <uicontrol>SMS</uicontrol>, or <uicontrol>SecureNova Notification</uicontrol>.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </section>
+    <section>
+        <title>Troubleshooting Tips</title>
+        <p>If a trigger fails to activate, verify the <uicontrol>Event Type</uicontrol> matches the monitoring system or check the <uicontrol>System Logs</uicontrol> for configuration errors. For further assistance, contact SecureNova support via the <uicontrol>Admin Portal</uicontrol>.</p>
+    </section>
+</refbody>
+</reference>
